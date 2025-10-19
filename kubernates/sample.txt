@@ -1,1 +1,2 @@
-hello its kubernateves for devb grop
+hello its kubernateves for devb grop 
+this commit fot poll scm to check its working or not 

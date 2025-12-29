@@ -3,16 +3,16 @@ pipeline{
     stages{
         stage ("planing"){
             steps{
-                echo planing
+                echo "planing"
             }
         }
     }stage("testing"){
         steps{
-            echo testing
+            echo "testing"
         }
     }stage("deplyong"){
         steps{
-            echo deploying
+            echo "deploying"
         }
     }
 }

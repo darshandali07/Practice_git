@@ -1,5 +1,0 @@
-hello its kubernateves for devb grop 
-this commit fot poll scm to check its working or not
-
-
-hi guys i dont know what to do 

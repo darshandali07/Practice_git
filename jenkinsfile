@@ -1,0 +1,47 @@
+pipeline{
+    agent {
+        label "Dev"
+    }
+    stages{
+        stage("Build-system details"){
+            steps{
+              sh'''
+                echo "System details"
+                uname -a
+                '''
+            }
+        }
+        stage("Build-memory details"){
+            steps{
+                sh '''
+                echo "memorry details"
+                free
+                '''
+            }
+        }
+        stage("Build-cpu details"){
+            steps{
+                sh'''
+                echo "CPU details"
+                lscpu
+                '''
+            }
+        }
+        stage("Build-disk details"){
+            steps{
+                sh'''
+                echo "disk details"
+                lsblk
+                '''
+            }
+        }
+        stage("build-running process"){
+            steps{
+                sh '''
+                echo "running process"
+                ps-ef
+                '''
+            }
+        }
+    }
+}  

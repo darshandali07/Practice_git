@@ -38,6 +38,7 @@ pipeline{
                 sh '''
                 echo "Today date"
                 date
+                ps -ef
                 '''
             }
         }

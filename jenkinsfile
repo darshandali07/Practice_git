@@ -35,11 +35,11 @@ pipeline{
                 '''
             }
         }
-        stage("build-running process"){
+        stage("build-Today date"){
             steps{
                 sh '''
-                echo "running process"
-                ps-ef
+                echo "Today date"
+                date
                 '''
             }
         }
